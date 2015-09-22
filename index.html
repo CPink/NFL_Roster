@@ -1,0 +1,44 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="site.css">
+</head>
+<div class="container">
+	<title></title>
+	<panel>
+		<header>My NFL Roster</header>
+	</panel>
+</div>
+
+<body>
+	<div class=panel-body>
+	<div class="player-roster">
+
+	</div>
+	<div class="panel panel-primary panel-add-player">
+		<div class=panel-heading><span class="glyphicon glyphicon-plus-sign expand-player-panel"></span> Add Player</div>
+			<div class=panel-body>
+    	<form id="add-player-form">
+  			<div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="position">Position</label>
+    <input type="text" class="form-control" id="pos" placeholder="Position">
+  </div>
+  <div class="form-group">
+    <label for="number">Number</label>
+    <input type="text" class="form-control" id="num" placeholder="Number">
+  </div>
+  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span> Add To Team</button>
+   <span class="btn btn-danger"id="btnGet" type="submit" class="btn btn-default">Get Player from NFL</span>
+
+</form>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>
