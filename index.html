@@ -1,7 +1,10 @@
 <html>
 
 <head>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="jquery.fancybox.js?v=2.1.5.0"></script>
 	<link rel="stylesheet" href="site.css">
 </head>
 <div class="container">
@@ -33,11 +36,20 @@
     <input type="text" class="form-control" id="num" placeholder="Number">
   </div>
   <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span> Add To Team</button>
-   <span class="btn btn-danger"id="btnGet" type="submit" class="btn btn-default">Get Player from NFL</span>
-
+   <span class="btn btn-danger" id="btnGet" type="submit" class="btn btn-default various" >Get Player from NFL</span>
 </form>
 	</div>
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+			<div id="inline" style="display: none">
+				<div class="form-group">
+				<label for="proName">Search Name</label>
+				<input type="text" id="proName" placeholder="Name of Player">
+			</div>
+			<div class="form-group">
+				<label for="proTeam">Search Team</label>
+				<input type="text" id="proTeam" placeholder="Name of Team">
+			</div>
+			<button type="submit" class="btn btn-default" id="btnSearch">Search</button>
+			</div>
 	<script src="app.js"></script>
 </body>
 

@@ -1,3 +1,19 @@
+$('#btnGet').on('click', function(){
+  $.fancybox({
+    maxWidth	: 800,
+    maxHeight	: 600,
+    fitToView	: false,
+    width		: '70%',
+    height		: '70%',
+    autoSize	: false,
+    closeClick	: false,
+    openEffect	: 'none',
+    closeEffect	: 'none',
+    href: '#inline'
+  });
+})
+
+
 
 var RosterController = function (playerFactory) {
   var _this = this;
@@ -76,7 +92,7 @@ $(function () {
   }
 
  RosterController = new RosterController(playerFactory);
-})
+});
 var playerService = function () {
 
   var _players = [];
@@ -106,6 +122,8 @@ var playerService = function () {
     }
 	}
 }
-	var ps = new playerService();
 
-$('#btnGet').on('click', ps());
+	var ps = new playerService();
+  $('#btnSearch').on('click', function(){
+    ps.loadPlayers();
+  })
